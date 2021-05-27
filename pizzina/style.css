@@ -1,0 +1,636 @@
+@charset "UTF-8";
+body {
+  /*fin de header*/
+  /*section 1*/
+  /* Slideshow container */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+  /* On smaller screens, decrease text size */
+  /*fin de section 1*/
+  /*section 2*/
+  /*fin de section 2*/
+  /*section 3*/
+  /*fin de section 3*/
+  /*footer*/
+}
+
+body header {
+  /* ******************** NAV BAR ******************** */
+  /* hide responsive menu */
+}
+
+body header .topnav {
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+body header .topnav_link {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+}
+
+body header .topnav_link:hover {
+  color: #0078b4;
+}
+
+body header #topnav_hamburger_icon,
+body header #topnav_responsive_menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body header {
+    /* hide classic menu */
+    /* position home link at left and hamburger at right */
+    /* disable horizontal scrolling  */
+    /* show responsive menu and position at the right of the screen */
+    /* And let's slide it in from the right */
+    /* ******************** HAMBURGER ICON ******************** */
+    /* define size and position of the hamburger link */
+    /* define the style (size, color, position, animation, ...) of the 3 spans */
+    /* set the 3 spans position to look like a hamburger */
+    /* change color when opening the menu */
+    /* the first span rotates 45° \ */
+    /* the second span disappears */
+    /* the last span rotates -45° / */
+  }
+  body header #topnav_menu {
+    display: none;
+  }
+  body header #home_link {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  body header #root {
+    position: relative;
+    overflow-x: hidden;
+  }
+  body header #topnav_responsive_menu {
+    display: block;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  body header #topnav_responsive_menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    min-width: 50vw;
+    height: 100vh;
+    padding: 56px 0 0;
+    text-align: center;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  }
+  body header #topnav_responsive_menu li {
+    padding: 12px 24px;
+  }
+  body header #topnav_responsive_menu a {
+    white-space: nowrap;
+    color: #333;
+    text-decoration: none;
+  }
+  body header #topnav_responsive_menu.open {
+    -webkit-transform: none;
+            transform: none;
+    position: fixed;
+  }
+  body header #topnav_hamburger_icon {
+    display: block;
+    position: relative;
+    margin: 16px;
+    width: 33px;
+    height: 28px;
+    z-index: 100;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    cursor: pointer;
+  }
+  body header #topnav_hamburger_icon span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 5px;
+    background: #ededed;
+    border-radius: 3px;
+    z-index: 100;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+  body header #topnav_hamburger_icon span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+  }
+  body header #topnav_hamburger_icon span:nth-child(2) {
+    top: 12px;
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+  }
+  body header #topnav_hamburger_icon span:nth-child(3) {
+    top: 24px;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+  }
+  body header #topnav_hamburger_icon.open span {
+    background: #333;
+  }
+  body header #topnav_hamburger_icon.open span:nth-child(1) {
+    width: 110%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  body header #topnav_hamburger_icon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  body header #topnav_hamburger_icon.open span:nth-child(3) {
+    width: 110%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+body .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+body .prev,
+body .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+body .prev:hover,
+body .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+body .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+body .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+body .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+body .active,
+body .dot:hover {
+  background-color: #717171;
+}
+
+body .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  body .prev,
+  body .next,
+  body .text {
+    font-size: 11px;
+  }
+}
+
+body .section2 .recette1 {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  body .section2 .recette1 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .section2 .recette1 .info1 {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  body .section2 .recette1 .info1 {
+    font-size: 15px;
+    text-align: justify;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+body .section2 .recette1 .pizza1 {
+  padding-left: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+  body .section2 .recette1 .pizza1 {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body .section2 .recette1 .pizza1 {
+    display: none;
+  }
+}
+
+body .section2 .recette2 {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  body .section2 .recette2 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .section2 .recette2 .info2 {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  body .section2 .recette2 .info2 {
+    font-size: 15px;
+    text-align: justify;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+body .section2 .recette2 .pizza2 {
+  padding-right: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+  body .section2 .recette2 .pizza2 {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body .section2 .recette2 .pizza2 {
+    display: none;
+  }
+}
+
+body .section3 {
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* The Modal (background) */
+  /* Modal Content (image) */
+  /* Caption of Modal Image */
+  /* Add Animation */
+  /* The Close Button */
+  /* 100% Image Width on Smaller Screens */
+}
+
+@media only screen and (max-width: 768px) {
+  body .section3 {
+    width: 90%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+body .section3 .myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .section3 .myImg:hover {
+  opacity: 0.7;
+}
+
+body .section3 .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+body .section3 .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+body .section3 #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+body .section3 .modal-content,
+body .section3 #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+body .section3 .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .section3 .close:hover,
+body .section3 .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  body .section3 .modal-content {
+    width: 100%;
+  }
+}
+
+body footer {
+  width: 100%;
+  background-color: #333;
+  margin-top: 5%;
+}
+
+body footer .foot {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+body footer .foot .logo {
+  width: 30%;
+}
+
+body footer .foot .logo h2 {
+  font-family: 'Pacifico', cursive;
+  color: white;
+}
+
+body footer .foot .social {
+  width: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  body footer .foot .social {
+    width: 30%;
+  }
+}
+
+body footer .foot .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+@media only screen and (max-width: 375px) {
+  body footer .foot .social ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body footer .foot .social ul li {
+  color: white;
+  font-size: 25px;
+}
+
+body footer p {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: white;
+  padding-bottom: 1%;
+}
+/*# sourceMappingURL=style.css.map */

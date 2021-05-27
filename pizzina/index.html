@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>pizzina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27176a295f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div id="root">
+            <div id="topnav" class="topnav">
+                <a id="home_link" class="topnav_link" href="./index.html">PIZZINA</a>
+
+                <!-- Classic Menu -->
+                <nav role="navigation" id="topnav_menu">
+                    <a class="topnav_link" href="/about">NOS PIZZAS</a>
+                    <a class="topnav_link" href="/contact-us">CONTACT</a>
+                </nav>
+
+                <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                    <!-- Some spans to act as a hamburger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <!-- Responsive Menu -->
+                <nav role="navigation" id="topnav_responsive_menu">
+                    <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/about">NOS PIZZAS</a></li>
+                        <li><a href="/contact-us">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--fin de header-->
+
+    <!--section 1-->
+    <section class="section1">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="./image/slider1.jpg" style="width:100%" alt="pizza aux tomates cerises">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./image/slider2.jpg" style="width:100%" alt="pizza aux pommes de terre">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./image/slider3.jpg" style="width:100%" alt="pizza aux tomates et mozzarella">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./image/slider4.jpg" style="width:100%" alt="pizza au chorizo">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    </section>
+    <!--fin de section 1-->
+
+    <!--section 2-->
+    <section class="section2">
+        <div class="recette1">
+            <div class="info1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laborum cupiditate accusantium magni
+                    veniam aut dignissimos vel perferendis vitae, fugit velit et eius saepe rem voluptates neque
+                    asperiores quis quasi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque minus
+                    explicabo enim minima rem dolore possimus, labore dolor voluptate autem eveniet temporibus
+                    doloremque accusantium, quod, sed ipsum nisi sequi blanditiis. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Porro explicabo ducimus voluptatibus praesentium inventore est
+                    laudantium harum reprehenderit voluptate. Animi impedit eius aspernatur. Pariatur, nostrum.
+                    Laudantium cumque eius culpa consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt, aut. Tenetur non atque voluptas pariatur. Corrupti molestiae ipsum id doloribus?
+                    Voluptates itaque nesciunt quo cupiditate rerum nihil asperiores autem soluta!</p>
+            </div>
+            <div class="pizza1">
+                <img src="./image/pizza1.jpg" alt="pizza aux lardons">
+            </div>
+        </div>
+
+        <div class="recette2">
+            <div class="pizza2">
+                <img src="./image/pizza2.jpg" alt="pizza en préparation">
+            </div>
+            <div class="info2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempore nulla ullam quibusdam quo
+                    vero voluptatem dolore ipsum ab aut corporis voluptatibus odit maiores harum deleniti, eum, sit
+                    corrupti? Sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, velit? Iure ad
+                    sed, velit accusantium a voluptas laboriosam ullam dicta harum libero iusto accusamus non obcaecati
+                    molestias nesciunt voluptates. Animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                    dolore omnis inventore exercitationem sunt enim aliquid dolor ea dignissimos, in reiciendis alias
+                    dicta voluptas sequi quisquam consectetur corrupti iure accusantium. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Pariatur aut amet, obcaecati ab aspernatur nisi earum iusto! Tempore
+                    optio odio, magnam doloribus illum praesentium veniam recusandae voluptate itaque earum. Facere.</p>
+            </div>
+        </div>
+    </section>
+    <!--fin de section  2-->
+
+    <!--section 3-->
+    <section class="section3">
+        <img class="myImg" src="./image/modal1.jpg" alt="pizza aux olives" style="width:100%;max-width:300px">
+        <img class="myImg" src="./image/modal2.jpg" alt="préparation de pizza au jambon"
+            style="width:100%;max-width:300px">
+        <img class="myImg" src="./image/modal3.jpg" alt="pizza aux fromages" style="width:100%;max-width:300px">
+        <img class="myImg" src="./image/modal4.jpg" alt="pizza margherita" style="width:100%;max-width:300px">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </section>
+    <!--fin de section 3-->
+
+    <!--footer-->
+    <footer>
+        <div class="foot">
+            <div class="logo">
+                <h2>PIZZINA</h2>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-instagram-square"></i></li>
+                </ul>
+            </div>
+        </div>
+        <p><i class="far fa-copyright"></i> Pizzina 2021</p>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+</body>
+
+</html>
